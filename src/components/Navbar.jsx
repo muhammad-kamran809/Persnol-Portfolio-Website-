@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion'
+import logo from '../assets/kamrandb.png'
 
 const navItems = [
   { id: 'home', label: 'Home' },
@@ -50,11 +51,7 @@ function Navbar() {
     >
       <div className="navbar-container">
         <a href="#home" className="logo" onClick={() => handleNavClick('home')}>
-          <span className="logo-mark">K</span>
-          <span className="logo-text">
-            <strong>Muhammad Kamran</strong>
-            <small>Full Stack Developer</small>
-          </span>
+          <img className="logo-image" src={logo} alt="Kamran Developer" />
         </a>
 
         <AnimatePresence initial={false}>

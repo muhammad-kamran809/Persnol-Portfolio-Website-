@@ -13,11 +13,6 @@ function Hero() {
   const [cvStatus, setCvStatus] = useState('idle')
   const cvDocumentRef = useRef(null)
 
-  const openCv = () => {
-    setCvStatus('loading')
-    setIsCvOpen(true)
-  }
-
   useEffect(() => {
     if (!isCvOpen) return undefined
 
@@ -129,10 +124,11 @@ function Hero() {
           >
             <Button href="#projects">View My Projects <span>→</span></Button>
             <Button href="#contact" variant="secondary"><span>✉</span> Contact Me</Button>
-            <button className="cv-button hero-cv-button" type="button" onClick={openCv}>
-              <span aria-hidden="true">↓</span>
+            <Button href={social.githubUrl} variant="secondary" target="_blank" rel="noreferrer"><span>⌘</span> GitHub</Button>
+            {/* <button className="cv-button hero-cv-button" type="button" onClick={openCv}> */}
+              {/* <span aria-hidden="true">↓</span>
               Open CV
-            </button>
+            </button> */}
           </motion.div>
 
           <motion.div

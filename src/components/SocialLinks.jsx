@@ -1,4 +1,4 @@
-import { Code2, Mail, MessageCircle } from 'lucide-react'
+import { Code2, FileText, Mail, MessageCircle } from 'lucide-react'
 import social from '../data/social'
 
 const links = [
@@ -41,6 +41,15 @@ function SocialLinks() {
           <span>{label}</span>
         </a>
       ))}
+      <button
+        className="social-link"
+        type="button"
+        aria-label="Open CV"
+        onClick={() => window.dispatchEvent(new Event('open-cv'))}
+      >
+        <FileText size={18} strokeWidth={1.8} aria-hidden="true" />
+        <span>Open CV</span>
+      </button>
     </nav>
   )
 }
