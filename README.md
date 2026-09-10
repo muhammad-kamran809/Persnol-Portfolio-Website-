@@ -10,7 +10,7 @@ The portfolio is designed to showcase my skills, experience, projects, education
 
 > Add your deployed Vercel URL here after deployment.
 
-**Live Website:** `https://your-portfolio.vercel.app`
+**Live Website:** `https://persnol-portfolio-website-five.vercel.app/`
 
 ---
 
